@@ -1,0 +1,300 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인사이트 | KW-Private Equity</title>
+    <meta name="description" content="투자, M&A, IPO, R&D, 정책자금, 경영컨설팅에 관한 최신 인사이트와 전문 칼럼을 제공합니다.">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <style>
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .insight-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all var(--transition-normal);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .insight-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--border-gold);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .insight-card-header {
+            padding: 2rem 2rem 1rem;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .insight-tag {
+            display: inline-block;
+            background: var(--accent-gold-muted);
+            color: var(--accent-gold);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .insight-card h3 {
+            font-size: 1.15rem;
+            line-height: 1.5;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .insight-card-body {
+            padding: 1.5rem 2rem 2rem;
+            flex: 1;
+        }
+
+        .insight-card-body p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .insight-date {
+            display: block;
+            color: var(--text-tertiary);
+            font-size: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .filter-tabs {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 0.5rem;
+        }
+
+        .filter-tab {
+            padding: 0.5rem 1.25rem;
+            border-radius: 20px;
+            border: 1px solid var(--border-light);
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all var(--transition-fast);
+            font-family: var(--font-main);
+        }
+
+        .filter-tab.active,
+        .filter-tab:hover {
+            background: var(--accent-gold-muted);
+            border-color: var(--border-gold);
+            color: var(--accent-gold);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="brand text-gradient-gold">KW-PE</a>
+            <ul class="nav-links">
+                <li><a href="index.html#services">서비스</a></li>
+                <li><a href="index.html#about">회사소개</a></li>
+                <li><a href="insight.html" style="color: var(--accent-gold);">인사이트</a></li>
+                <li><a href="index.html#contact">문의하기</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 35vh; padding-top: 120px; align-items: flex-start;">
+        <div class="hero-bg"></div>
+        <div class="container reveal">
+            <span class="hero-subtitle">KW-PE Insights</span>
+            <h1 class="text-gradient">전문가 인사이트</h1>
+            <p class="lead" style="margin-top: 1rem; max-width: 650px;">
+                투자·M&A·IPO·경영컨설팅 분야 최신 트렌드와 전문가의 심층 분석을 통해 기업의 현명한 의사결정을 지원합니다.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" style="padding-top: 2rem;">
+        <div class="container">
+            <div class="reveal">
+                <div class="filter-tabs">
+                    <button class="filter-tab active">전체</button>
+                    <button class="filter-tab">투자·M&A</button>
+                    <button class="filter-tab">IPO</button>
+                    <button class="filter-tab">R&D·정책자금</button>
+                    <button class="filter-tab">경영컨설팅</button>
+                </div>
+            </div>
+
+            <div class="insight-grid">
+                <div class="insight-card reveal reveal-delay-1">
+                    <div class="insight-card-header">
+                        <span class="insight-tag">M&A</span>
+                        <h3>가업승계형 M&A, 더 이상 선택이 아닌 필수가 되다</h3>
+                    </div>
+                    <div class="insight-card-body">
+                        <p>고령화된 CEO 세대와 후계자 부재 현상이 맞물리며 기업 승계형 M&A 시장이 빠르게 확대되고 있습니다. 정부 지원 컨설팅 비용 제도와 함께 2026년 M&A 시장의
+                            핵심 트렌드를 분석합니다.</p>
+                        <span class="insight-date">2026. 03. 20</span>
+                    </div>
+                </div>
+
+                <div class="insight-card reveal reveal-delay-2">
+                    <div class="insight-card-header">
+                        <span class="insight-tag">IPO</span>
+                        <h3>코스닥 상장을 위한 5가지 선제적 재무 준비 사항</h3>
+                    </div>
+                    <div class="insight-card-body">
+                        <p>지정감사 도입 이후 예비 상장사들이 마주하는 가장 흔한 회계 이슈 5가지와, 이를 사전에 해결하기 위한 내부통제시스템 구축 방법론을 상세히 안내합니다.</p>
+                        <span class="insight-date">2026. 03. 15</span>
+                    </div>
+                </div>
+
+                <div class="insight-card reveal reveal-delay-3">
+                    <div class="insight-card-header">
+                        <span class="insight-tag">정책자금</span>
+                        <h3>2026년 중소기업 정책자금 완전 정복 — 중진공·기보·신보 총정리</h3>
+                    </div>
+                    <div class="insight-card-body">
+                        <p>2026년 상반기 기준 중소벤처기업진흥공단, 기술보증기금, 신용보증기금의 주요 정책자금 프로그램을 한눈에 비교하고, 최적의 자금 매칭 전략을 제시합니다.</p>
+                        <span class="insight-date">2026. 03. 10</span>
+                    </div>
+                </div>
+
+                <div class="insight-card reveal reveal-delay-4">
+                    <div class="insight-card-header">
+                        <span class="insight-tag">투자</span>
+                        <h3>Pre-IPO 투자 단계별 밸류에이션 산정 방법론</h3>
+                    </div>
+                    <div class="insight-card-body">
+                        <p>상장 직전 단계의 기업 가치를 정확하게 산정하는 것은 투자자와 창업자 모두에게 중요한 과제입니다. PER, EV/EBITDA, DCF 등 주요 방법론과 적용 사례를
+                            분석합니다.</p>
+                        <span class="insight-date">2026. 03. 05</span>
+                    </div>
+                </div>
+
+                <div class="insight-card reveal reveal-delay-1">
+                    <div class="insight-card-header">
+                        <span class="insight-tag">경영컨설팅</span>
+                        <h3>CEO 가지급금, 방치하면 세무조사의 표적이 된다</h3>
+                    </div>
+                    <div class="insight-card-body">
+                        <p>많은 중소기업 대표이사들이 가지급금의 심각성을 인지하지 못합니다. 가지급금 발생 원인부터 합법적인 정리 방법까지, 세무 리스크를 제로로 만드는 전략을 제시합니다.
+                        </p>
+                        <span class="insight-date">2026. 02. 28</span>
+                    </div>
+                </div>
+
+                <div class="insight-card reveal reveal-delay-2">
+                    <div class="insight-card-header">
+                        <span class="insight-tag">R&D</span>
+                        <h3>TIPS 프로그램 선정을 위한 기술사업화 계획서 작성 핵심 포인트</h3>
+                    </div>
+                    <div class="insight-card-body">
+                        <p>민간 투자주도형 기술창업지원 프로그램(TIPS) 선정률을 높이기 위한 사업계획서 구성 전략과 평가위원이 실제로 중요하게 보는 항목을 공개합니다.</p>
+                        <span class="insight-date">2026. 02. 20</span>
+                    </div>
+                </div>
+
+                <div class="insight-card reveal reveal-delay-3">
+                    <div class="insight-card-header">
+                        <span class="insight-tag">M&A</span>
+                        <h3>M&A 실패를 부르는 5가지 전조 증상</h3>
+                    </div>
+                    <div class="insight-card-body">
+                        <p>결심과 의지만으로 M&A는 성공하지 않습니다. 딜이 무산되는 가장 일반적인 5가지 원인을 분석하고, 이를 사전에 방지하기 위한 체크리스트를 제시합니다.</p>
+                        <span class="insight-date">2026. 02. 14</span>
+                    </div>
+                </div>
+
+                <div class="insight-card reveal reveal-delay-4">
+                    <div class="insight-card-header">
+                        <span class="insight-tag">IPO</span>
+                        <h3>상장 후 오버행(Overhang) 리스크, 미리 관리하는 법</h3>
+                    </div>
+                    <div class="insight-card-body">
+                        <p>상장 후 주가 하락의 주된 원인인 보호예수 해제와 오버행 물량. IPO 전부터 전략적으로 주주 구성과 보호예수 기간을 설계하는 방법을 상세히 안내합니다.</p>
+                        <span class="insight-date">2026. 02. 05</span>
+                    </div>
+                </div>
+
+                <div class="insight-card reveal reveal-delay-1">
+                    <div class="insight-card-header">
+                        <span class="insight-tag">경영컨설팅</span>
+                        <h3>임원 퇴직금 규정, 제대로 설계되어 있지 않으면 손해다</h3>
+                    </div>
+                    <div class="insight-card-body">
+                        <p>임직원 퇴직금 규정과 CEO 플랜은 기업의 합법적인 절세 수단이자 핵심 인재 유지 도구입니다. 최신 세법 개정 사항을 반영한 설계 방법론을 정리합니다.</p>
+                        <span class="insight-date">2026. 01. 28</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta-section" style="background-color: var(--bg-secondary); padding: 5rem 0;">
+        <div class="container text-center reveal">
+            <h2 class="text-gradient">기업의 의사결정, KW-PE와 함께하세요.</h2>
+            <p class="lead" style="margin-bottom: 2.5rem;">전문가의 인사이트를 넘어, 실전에서 통하는 맞춤형 자문을 제공합니다.</p>
+            <a href="mailto:36311112@naver.com" class="btn btn-primary">1:1 기밀 자문 의뢰하기</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <span class="brand text-gold">KW-PE</span>
+                    <p class="footer-desc">케이더블유프라이빗에쿼티(주) | 대표: 오재홍<br>중소·벤처기업 전문 국가 공인 M&A 자문 및 투자 파트너</p>
+                </div>
+                <div class="footer-links">
+                    <h4>서비스</h4>
+                    <ul>
+                        <li><a href="investment.html">Investment</a></li>
+                        <li><a href="mna.html">M&A 매각/인수</a></li>
+                        <li><a href="ipo.html">IPO 자문</a></li>
+                        <li><a href="rnd-policy.html">R&D / 정책자금 자문</a></li>
+                        <li><a href="consulting.html">경영컨설팅</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>문의</h4>
+                    <ul style="line-height: 1.8;">
+                        <li style="color: var(--text-secondary); font-size: 0.9rem;">주소 : 서울 영등포구 국회대로62길 21 (여의도동,
+                            동성빌딩) 10층</li>
+                        <li><a href="mailto:36311112@naver.com">이메일 : 36311112@naver.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 케이더블유프라이빗에쿼티(주). All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+    <script>
+ment.querySelectorAll('.filter-tab').forEach(tab => {
+            tab.addEventListener('click', () => {
+                document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
